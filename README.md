@@ -1,0 +1,2 @@
+# Ledesone
+Ledesoneのホームページです

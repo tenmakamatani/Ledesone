@@ -1,2 +1,2 @@
 # Ledesone
-Ledesoneのホームページです
+Ledesoneのホームページを作ります

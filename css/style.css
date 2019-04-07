@@ -321,7 +321,8 @@ div[class^="imformation"] p {
 }
 .history {
     width: 100%;
-    height: 1000px;
+    margin-top: 5vw;
+    height: 75vw;
     transform: skewY(-1.2deg);
     display: flex;
     justify-content: center;
@@ -347,6 +348,24 @@ div[class^="imformation"] p {
         left: 4vw;
     font-size: 1.5vw;
     margin: 0;
+}
+.rotate-contact {
+    display: flex;
+    justify-content: center;
+}
+.contact-container {
+    width: 80%;
+    transform: skewY(1.2deg);
+    text-align: center;
+    color: white;
+}
+.contact-container h1 {
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+.contact-container p {
+    margin-top: 5vw;
+    font-size: 1.2vw;
 }
 @media screen and (min-width: 960px) {
     header img {
@@ -420,6 +439,9 @@ div[class^="imformation"] p {
     .imformation-content p {
         line-height: 2vw;
     }
+    .contact-container p {
+        margin-top: 3vw;
+    }
 }
 @media screen and (max-width: 540px) {
     .rotate-news {
@@ -468,6 +490,11 @@ div[class^="imformation"] p {
         transform: scale(0.8);
         white-space: nowrap;
     }
+    .contact-container p {
+        transform: scale(0.8);
+        position: relative;
+            bottom: 10px;
+    }
 }
 @media screen and (max-width: 400px) {
     .media p, .event p {
@@ -492,5 +519,10 @@ div[class^="imformation"] p {
         transform: scale(0.6);
         white-space: nowrap;
         margin-bottom: 100px;
+    }
+    .contact-container p {
+        transform: scale(0.5);
+        position: relative;
+            bottom: 8vw;
     }
 }

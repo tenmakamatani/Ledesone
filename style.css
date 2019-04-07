@@ -224,18 +224,146 @@ section[class^="rotate"] {
 .eventmedia-container p {
     font-size: 1vw;
 }
+.about {
+    width: 100%;
+    height: 70vw;
+    transform: skewY(-1.2deg);
+    display: flex;
+    justify-content: center;
+}
+.about-container {
+    width: 100%;
+    transform: skewY(1.2deg);
+    margin-top: 10vw;
+    text-align: center;
+}
+.about-container h1 {
+    font-size: 2.5vw;
+    font-weight: 350;
+}
+div[class^="imformation"] {
+    border-bottom: solid 0.5px black; 
+    display: flex;
+}
+div[class^="imformation"] h2 {
+    line-height: 10vw;
+    font-size: 1.5vw;
+    position: relative;
+        left: 5%;
+}
+div[class^="imformation"] p {
+    font-size: 1.2vw;
+    position: relative;
+        left: 20vw;
+}
+.adjust-imformation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.imformation-found, .imformation-location, .imformation-name {
+    height: 7vw;
+}
+.imformation-found, .imformation-location, .imformation-name p {
+    line-height: 10vw;
+}
+.imformation-found .adjust-imformation {
+    margin-left: 1.5vw;
+}
+.imformation-content {
+    height: 20vw;
+}
+.imformation-content h2 {
+    position: relative;
+        bottom: 7vw
+}
+.imformation-content .adjust-imformation {
+    height: 100%;
+}
+.content-container {
+    width: 70%;
+    position: relative;
+        left: 18.2vw;
+    height: 100%;
+    text-align: left;
+}
+.content-container p {
+    line-height: 2.5vw;
+    position: relative;
+        left: 0 !important;
+}
+.big-imformation-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.small-imformation-container {
+    width: 80%;
+}
+.rotate-origin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.origin-information-container {
+    transform: skewY(1.2deg);
+    width: 80%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+.rotate-origin h1 {
+    font-weight: 200;
+    font-size: 2.5vw;
+}
+.rotate-origin p {
+    font-size: 1vw;
+}
+@media screen and (max-width: 400px) {
+    .about p {
+        transform: scale(0.7) !important;
+    }
+    .imformation-location p {
+        margin-left: -10vw !important;
+    }
+    .rotate-origin p {
+        transform: scale(0.5);
+    }
+}
 @media screen and (max-width: 540px) {
+    .rotate-news {
+        margin-top: 20px;
+    }
     .rotate-news h1, .eventmedia-container h1 {
         font-size: 4vw;
     }
     .rotate-news p, eventmedia-container p {
         margin: 0 auto;
     }
-    .news-box {
-        transform: scale(0.8);
-    }
     .rotate-event-and-media .news-box {
         margin: 0 auto;
+    }
+    .eventmedia-container .news-box {
+        position: relative;
+            bottom: 1vw;    
+    }
+    .news-box h4 {
+        transform: scale(0.7);
+        white-space: nowrap;
+    }
+    .content-container p {
+        margin-left: -12vw;
+        transform: scale(0.7);
+        line-height: 0.6vw !important;
+    }
+    .imformation-location p {
+        transform: scale(0.8);
+        margin-left: -6vw;
+    }
+    .rotate-origin p {
+        position: relative;
+        bottom: 4vw;
+        transform: scale(0.6);
     }
 }
 @media screen and (max-width: 960px) {
@@ -273,6 +401,16 @@ section[class^="rotate"] {
     }
     .rotate-event-and-media .news-box {
         margin: 0 auto;
+    }
+    .imformation-found .adjust-imformation {
+        position: relative;
+            right: 1vw;
+    }
+    .imformation-found p {
+        transform: scale(0.85)
+    }
+    .imformation-content p {
+        line-height: 2vw;
     }
 }
 @media screen and (min-width: 960px) {

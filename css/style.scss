@@ -8,8 +8,18 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
+}
+
+.btn {
+  border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
 }
 
 /*-----header-----*/
@@ -142,7 +152,46 @@ ul {
 }
 
 
+/*-----info-----*/
 
+.info {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #111a2c;
+  padding: 20px 0;
+  margin-top: 100px;
+  width: 100%;
+  &:before {
+    z-index: -10;
+    content: "";
+    transform: rotateZ(-1.5deg);
+    position: absolute;
+    left: -5%;
+    top: -20px;
+    width: 110%;
+    height: 40px;
+    background-color: #111a2c;
+  }
+  &:after {
+    z-index: -10;
+    content: "";
+    transform: rotateZ(-1.5deg);
+    position: absolute;
+    left: -5%;
+    bottom: -20px;
+    width: 110%;
+    height: 40px;
+    background-color: #111a2c;
+  }
+  &__ttl {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  &__desc {
+    margin: 20px 0;
+  }
+}
 
 
 

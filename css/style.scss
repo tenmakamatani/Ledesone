@@ -73,14 +73,36 @@ ul {
     background-color: white;
   }
   &__ttl {
+    white-space: nowrap;
     z-index: -20;
     text-align: center;
     color: white;
     position: absolute;
-    top: 45vh;
+    top: 50vh;
     width: 100%;
     font-size: 3rem;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+  }
+  .main-visual {
+    &__ttl {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-visual {
+    &__ttl {
+      font-size: 1.7rem;
+    }
   }
 }
 

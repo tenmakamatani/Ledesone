@@ -94,7 +94,7 @@ header ul {
     align-items: center;
 }
 .service-title-container h1 {
-    font-size: 2.5vw;
+    font-size: 2.4vw;
 }
 .each-service-container {
     width: 100%;
@@ -106,7 +106,7 @@ header ul {
 }
 .each-service {
     width: 33%;
-    height: 50vw;
+    height: 55vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,11 +124,11 @@ header ul {
     position: absolute;
 }
 .circle-image-container h2 {
-    font-size: 1.5vw;
     font-weight: 100;
     text-align: center;
     position: relative;
-        top: 7vw;
+        top: 8vw;
+    width: 50vw;
 }
 @media screen and (max-width: 960px) {
     header ul {
@@ -143,6 +143,14 @@ header ul {
     }
     .linear-nav {
         height: 20px;
+    }
+    .each-service:nth-of-type(2) .circle-image {
+        margin-top: 1.2vw;
+    }
+    .circle-image-container h2 {
+        color: red;
+        font-size: 2vw;
+        transform: scale(0.6);
     }
 }
 @media screen and (min-width: 960px) {
@@ -166,5 +174,8 @@ header ul {
     }
     .linear-nav-container {
         margin-top: 14px;
+    }
+    .circle-image-container h2 {
+        font-size: 1.2vw;
     }
 }

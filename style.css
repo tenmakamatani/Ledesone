@@ -59,8 +59,9 @@ header ul {
 .scroll-nav {
     display: flex;
     justify-content:center;
-    height: 40px;
     margin-top: 20px;
+    transform: skewY(-1.2deg);
+    height: 15vw;
 }
 .scroll-nav-inner {
     height: 100%;
@@ -81,6 +82,54 @@ header ul {
     width: 1px;
     background: linear-gradient(to bottom, black, white);
 }
+.service {
+    height: 40vw;
+    transform: skewY(-1.2deg)
+}
+.service-title-container {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-title-container h1 {
+    font-size: 2.4vw;
+}
+.each-service-container {
+    width: 100%;
+    height: 40vw;
+    transform: skewY(1.2deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.each-service {
+    width: 33%;
+    height: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-image-adjuster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-image {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+}
+.circle-image-container h2 {
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+        top: 8vw;
+    width: 50vw;
+}
 @media screen and (max-width: 960px) {
     header ul {
         display: none;
@@ -90,10 +139,18 @@ header ul {
     }
     .scroll-nav-inner p {
         margin-top: 20px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .linear-nav {
-        height: 30px;
+        height: 20px;
+    }
+    .each-service:nth-of-type(2) .circle-image {
+        margin-top: 1.2vw;
+    }
+    .circle-image-container h2 {
+        color: red;
+        font-size: 2vw;
+        transform: scale(0.6);
     }
 }
 @media screen and (min-width: 960px) {
@@ -117,5 +174,8 @@ header ul {
     }
     .linear-nav-container {
         margin-top: 14px;
+    }
+    .circle-image-container h2 {
+        font-size: 1.2vw;
     }
 }

@@ -319,51 +319,30 @@ div[class^="imformation"] p {
 .rotate-origin p {
     font-size: 1vw;
 }
-@media screen and (max-width: 400px) {
-    .about p {
-        transform: scale(0.7) !important;
+@media screen and (min-width: 960px) {
+    header img {
+        width: 260px;
     }
-    .imformation-location p {
-        margin-left: -10vw !important;
+    header .header-image {
+        width: 35%;
     }
-    .rotate-origin p {
-        transform: scale(0.5);
+    header ul {
+        list-style: none;
+        display: flex;
+        width: 65%;
+    } 
+    header li {
+        font-family: "Amiri";
+        margin-left: 6%;
     }
-}
-@media screen and (max-width: 540px) {
-    .rotate-news {
-        margin-top: 20px;
+    .scroll-nav {
+        margin-top: 25px;
     }
-    .rotate-news h1, .eventmedia-container h1 {
-        font-size: 4vw;
+    .linear-nav-container {
+        margin-top: 14px;
     }
-    .rotate-news p, eventmedia-container p {
-        margin: 0 auto;
-    }
-    .rotate-event-and-media .news-box {
-        margin: 0 auto;
-    }
-    .eventmedia-container .news-box {
-        position: relative;
-            bottom: 1vw;    
-    }
-    .news-box h4 {
-        transform: scale(0.7);
-        white-space: nowrap;
-    }
-    .content-container p {
-        margin-left: -12vw;
-        transform: scale(0.7);
-        line-height: 0.6vw !important;
-    }
-    .imformation-location p {
-        transform: scale(0.8);
-        margin-left: -6vw;
-    }
-    .rotate-origin p {
-        position: relative;
-        bottom: 4vw;
-        transform: scale(0.6);
+    .circle-image-container h2 {
+        font-size: 1.2vw;
     }
 }
 @media screen and (max-width: 960px) {
@@ -413,29 +392,64 @@ div[class^="imformation"] p {
         line-height: 2vw;
     }
 }
-@media screen and (min-width: 960px) {
-    header img {
-        width: 260px;
+@media screen and (max-width: 540px) {
+    .rotate-news {
+        margin-top: 20px;
     }
-    header .header-image {
-        width: 35%;
+    .rotate-news h1, .eventmedia-container h1 {
+        font-size: 4vw;
     }
-    header ul {
-        list-style: none;
+    .rotate-news p, eventmedia-container p {
+        margin: 0 auto;
+    }
+    .rotate-event-and-media .news-box {
+        margin: 0 auto;
+    }
+    .eventmedia-container .news-box {
+        position: relative;
+            bottom: 1vw;    
+    }
+    .news-box h4 {
+        transform: scale(0.7);
+        white-space: nowrap;
+    }
+    .content-container p {
+        margin-left: -12vw;
+        transform: scale(0.7);
+        line-height: 0.6vw !important;
+    }
+    .imformation-location p {
+        transform: scale(0.8);
+        margin-left: -6vw;
+    }
+    .origin-information-container {
         display: flex;
-        width: 65%;
-    } 
-    header li {
-        font-family: "Amiri";
-        margin-left: 6%;
+        justify-content: center;
+        align-items: center;
     }
-    .scroll-nav {
-        margin-top: 25px;
+    .news-box-container {
+        margin-left: 10px;
     }
-    .linear-nav-container {
-        margin-top: 14px;
+    rotate-origin p {
+        font-size: 0.8vw;
     }
-    .circle-image-container h2 {
-        font-size: 1.2vw;
+}
+@media screen and (max-width: 400px) {
+    .media p, .event p {
+        transform: scale(0.7);
+        white-space: nowrap;
+    }
+    .about p {
+        transform: scale(0.7) !important;
+    }
+    .imformation-location p {
+        margin-left: -10vw !important;
+    }
+    .rotate-origin p {
+        transform: scale(0.6);
+    }
+    .rotate-origin h1 {
+        position: relative;
+            top: 7vw;
     }
 }

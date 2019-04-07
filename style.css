@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    height: 1000px;
+    font-family: "Noto Serif CJK SC", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic"
+}
+header {
+    width: 100%;
+    height: 8vw;
+    background-image: url("images/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+header .header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+        bottom: 8px;
+}
+.header-image img {
+    width: 25vw;
+    min-width: 150px;
+}
+header ul {
+    position: relative;
+        bottom: 8px;
+    font-size: 1.7vw;
+    color: #3D3F57;
+}
+.introduction {
+    background-image: url("images/sky.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: skewY(-1.2deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+        top: 36px;
+}
+.introduction:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+}
+.introduction h1 {
+    color: white;
+    font-size: 4vw;
+    font-weight: 400;
+    position: absolute;
+    margin-top: -20px;
+}
+.scroll-nav {
+    display: flex;
+    justify-content:center;
+    height: 40px;
+    margin-top: 20px;
+}
+.scroll-nav-inner {
+    height: 100%;
+}
+.scroll-nav-inner p {
+    font-size: 1.3vw;
+    height: 20px;
+    margin: 0;
+    font-weight: 100
+}
+.linear-nav-container {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.linear-nav {
+    height: 39px;
+    width: 1px;
+    background: linear-gradient(to bottom, black, white);
+}
+@media screen and (max-width: 960px) {
+    header ul {
+        display: none;
+    }
+    header {
+        height: 54px;
+    }
+    .scroll-nav-inner p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .linear-nav {
+        height: 30px;
+    }
+}
+@media screen and (min-width: 960px) {
+    header img {
+        width: 260px;
+    }
+    header .header-image {
+        width: 35%;
+    }
+    header ul {
+        list-style: none;
+        display: flex;
+        width: 65%;
+    } 
+    header li {
+        font-family: "Amiri";
+        margin-left: 6%;
+    }
+    .scroll-nav {
+        margin-top: 25px;
+    }
+    .linear-nav-container {
+        margin-top: 14px;
+    }
+}

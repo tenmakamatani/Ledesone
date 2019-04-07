@@ -18,16 +18,20 @@
     <meta name="msapplication-TileColor" content="#FFFFFF"/>
     <title>Ledesone</title>
     <link rel="shortcut icon" href="images/mark.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="header-image">
             <img src="images/title.png">
         </div>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">中身</div>
+        </div>
         <ul>
-            <li>Top</li>
             <li>Service</li>
             <li>News</li>
             <li>Event</li>
@@ -159,5 +163,6 @@
             </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>

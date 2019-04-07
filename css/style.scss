@@ -100,6 +100,51 @@ ul {
   }
 }
 
+
+/*-----service-----*/
+
+
+
+.service {
+  margin-top: 100px;
+  &__ttl {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  &-list {
+    display: flex;
+    margin-top: 50px;
+    &__item {
+      width: 33.3%;
+      &-icon {
+        margin: auto;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0 2px 6px;
+      }
+      &-img {
+        border-radius: 30px;
+        margin-top: 15px;
+        width: 90px;
+      }
+      &-name {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 @media screen and (max-width: 780px) {
   .header {
     &__menu {
@@ -123,62 +168,7 @@ ul {
 
 
 
-
-.service {
-  height: 45vw;
-  transform: skewY(-1.2deg);
-}
-.service-title-container {
-  width: 100%;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.service-title-container h1 {
-  font-size: 2.4vw;
-}
-.each-service-container {
-  width: 100%;
-  height: 30vw;
-  transform: skewY(1.2deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.each-service {
-  width: 33%;
-  height: 55vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.circle-image-adjuster {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.circle-image {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50%;
-  position: absolute;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.each-service:nth-of-type(1) .circle-image {
-  background-image: url(../images/mark.png);
-  background-size: 65%;
-}
-.each-service:nth-of-type(2) .circle-image {
-  background-image: url(../images/ideeLabo.png);
-  background-size: 250%;
-}
-.each-service:nth-of-type(3) .circle-image {
-  background-image: url(../images/star.png);
-  background-size: 550%;
-}
+/*
 .circle-image-container h2 {
   font-weight: 100;
   text-align: center;
@@ -186,6 +176,7 @@ ul {
   top: 8vw;
   width: 50vw;
 }
+
 section[class^="rotate"] {
   width: 100%;
   height: 25vw;
@@ -491,3 +482,4 @@ footer {
   top: 5vw;
 }
 
+*/

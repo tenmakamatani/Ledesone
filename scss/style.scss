@@ -31,6 +31,7 @@ ul {
   width: 100%;
   background-color: white;
   padding: 10px 0 0 0;
+  z-index: 9999;
   &:after {
     z-index: 0;
     content: "";
@@ -155,7 +156,6 @@ ul {
 /*-----info-----*/
 
 .info {
-  z-index: -30;
   position: relative;
   text-align: center;
   color: white;

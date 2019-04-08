@@ -6,6 +6,9 @@ body {
   font-family: "Noto Serif SC",sans-serif !important;
   overflow-x: hidden; }
 
+.container {
+  overflow-x: hidden; }
+
 a {
   text-decoration: none; }
 

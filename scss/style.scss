@@ -14,8 +14,8 @@ body {
 
 a {
   text-decoration: none;
+  color: black;    
 }
-
 ul {
   list-style: none;
 }
@@ -29,7 +29,6 @@ input {
   padding: 10px 30px;
   color: white;
 }
-
 /*-----header-----*/
 
 .header {
@@ -249,7 +248,11 @@ input {
         border-radius: 30px;
         margin-top: 15px;
         width: 90px;
+        transition: 0.3s;
       }
+        &-img:hover {
+            opacity: 0.6;
+        }
       &-name {
         margin-top: 15px;
         text-align: center;

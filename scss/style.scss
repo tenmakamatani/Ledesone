@@ -72,6 +72,9 @@ input {
 
 /* nav-drawer */
 
+label {
+    cursor: pointer;
+}
 .nav {
   z-index: 200;
   padding: 70px 35px;

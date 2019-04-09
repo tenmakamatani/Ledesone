@@ -421,7 +421,11 @@ label {
         color: #305097;
       }
       .sns__list-icon:nth-child(3) i{
-        color:#3f729b
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        border-radius: 6px;
+        color: white;
+        vertical-align: middle;
+        padding: 2px;
       }
     }
     &__col-2 {
@@ -453,6 +457,7 @@ footer {
   font-size: 0.75rem;
   margin: 50px 0 5px 0;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 780px) {

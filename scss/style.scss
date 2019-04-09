@@ -25,10 +25,43 @@ input {
   display: none;
 }
 
-.btn {
-  border: 1px solid white;
-  padding: 10px 30px;
-  color: white;
+.btn{
+  margin: auto;
+  width: 140px;
+  height: 50px;
+  border:  1px solid white;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  &-back {
+    width: 210px;
+    height: 500px;
+    position: absolute;
+    top: -50px;
+    left: -190px;
+    background: white;
+    transition: all .5s ease;
+    transform: rotateZ(-20deg);
+    z-index: 1;
+  }
+  a {
+    font-size: 1rem;
+    color: white;
+    line-height: 50px;
+    transition: all 0.2s ease;
+    z-index: 2;
+    position: relative;
+  }
+  &:hover {
+    .btn-back {
+      left: 50px;
+    }
+    a {
+      color: #11121b;
+    }
+  }
 }
 
 /*-----header-----*/

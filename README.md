@@ -10,6 +10,11 @@ Ledesoneのホームページです。
 $ yarn install
 ```
 
+### 開発用サーバーの起動
+```
+$ yarn start
+```
+
 ### SCSSのコンパイル
 ```
 $ yarn scss
